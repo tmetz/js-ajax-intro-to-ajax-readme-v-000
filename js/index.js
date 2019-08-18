@@ -7,7 +7,7 @@ function showRepositories() {
     repoList += '<li>' + this.responseText[i]['name'] + '</li>';
   }
   repoList += '</ul>';
-  document.getElementbyId('repositories').innerHTML = repoList;
+  document.getElementById('repositories').innerHTML = repoList;
 }
 
 function getRepositories() {
