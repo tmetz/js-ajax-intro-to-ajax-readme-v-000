@@ -5,11 +5,11 @@ function showRepositories() {
   console.log(repos);
   const repoList = `<ul>${repos
   .map(
-    r => 
-      '<li>' + 
-      r.name + 
-      ' - <a href = "#" data-repo = "' + 
-      r.name + 
+    r =>
+      '<li>' +
+      r.name +
+      ' - <a href = "#" data-repo = "' +
+      r.name +
       '" onClick = "getCommits(this)">Get Commits</a></li>'
     )
   .join('')}</ul>`;
